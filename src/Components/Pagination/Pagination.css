@@ -1,0 +1,7 @@
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination {
+  display: inline-block;
+}
