@@ -1,7 +1,8 @@
-import React from "react"
-import Select from "../Elements/Select"
-import Button from "../Elements/Button"
-import "./Pagination.css"
+import React from "react";
+import { number, string, func } from "prop-types";
+import Select from "../Elements/Select";
+import Button from "../Elements/Button";
+import "./Pagination.css";
 
 const Pagination = ({
     total,
@@ -16,13 +17,13 @@ const Pagination = ({
 }) => {
     const onNext = e => {
         e.preventDefault();
-        if ( (page + 1) <= pages) {
+        if (page + 1 <= pages) {
             paginate(pageKey, page + 1);
         }
     };
     const onPrev = e => {
         e.preventDefault();
-        if ( (page - 1) >= 1) {
+        if (page - 1 >= 1) {
             paginate(pageKey, page - 1);
         }
     };
@@ -36,7 +37,10 @@ const Pagination = ({
             <div className="pagination">
                 <Button label="Prev" name={pageKey} click={onPrev} />
                 <Select
-                    list={Array.from(new Array(pages), (val, index) => index + 1 )}
+                    list={Array.from(
+                        new Array(pages),
+                        (val, index) => index + 1
+                    )}
                     value={dropdownVal}
                     change={onSelect}
                     name={dropdownKey}
@@ -57,6 +61,18 @@ Pagination.defaultProps = {
     updateState: f => f,
     dropdownKey: "",
     dropdownVal: ""
+};
+
+Pagination.propTypes = {
+    total: number.isRequired,
+    perPage: number.isRequired,
+    page: number.isRequired,
+    pages: number.isRequired,
+    pageKey: string.isRequired,
+    paginate: func.isRequired,
+    updateState: func.isRequired,
+    dropdownKey: string.isRequired,
+    dropdownVal: string.isRequired
 };
 
 export default Pagination;

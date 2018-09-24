@@ -1,15 +1,14 @@
-import React from "react"
-import { array, number, string, func } from 'prop-types'
-import "./Select.css"
+import React from "react";
+import { array, number, string, func } from "prop-types";
+import "./Select.css";
 
 const Select = ({ list, change, value, name, defaultOption }) => {
-
     const onChange = e => {
         e.preventDefault();
         change(e.target.name, e.target.value);
     };
-    
-    if (defaultOption != '') {
+
+    if (defaultOption !== "") {
         return (
             <select
                 className="select select-custom"
@@ -19,7 +18,7 @@ const Select = ({ list, change, value, name, defaultOption }) => {
             >
                 <option value={0}>{defaultOption}</option>
                 {list.map((item, index) => (
-                    <option key={index} value={item.id ? item.id : index + 1} >
+                    <option key={index} value={item.id ? item.id : index + 1}>
                         {item.value ? item.value : item}
                     </option>
                 ))}
@@ -34,7 +33,7 @@ const Select = ({ list, change, value, name, defaultOption }) => {
                 value={value}
             >
                 {list.map((item, index) => (
-                    <option key={index} value={item.id ? item.id : index + 1} >
+                    <option key={index} value={item.id ? item.id : index + 1}>
                         {item.value ? item.value : item}
                     </option>
                 ))}
@@ -45,16 +44,16 @@ const Select = ({ list, change, value, name, defaultOption }) => {
 
 Select.defaultProps = {
     list: [],
-    change: f => f, 
-    value: '', 
-    name: '',
-    defaultOption: ''
+    change: f => f,
+    value: "0",
+    name: "",
+    defaultOption: ""
 };
 
 Select.propTypes = {
     list: array.isRequired,
-    change: func.isRequired, 
-    value: number.isRequired, 
+    change: func.isRequired,
+    value: string.isRequired,
     name: string.isRequired,
     defaultOption: string
 };

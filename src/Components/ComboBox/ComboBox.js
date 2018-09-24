@@ -1,7 +1,8 @@
-import React from "react"
-import Select from "../Elements/Select"
-import Button from "../Elements/Button"
-import "./ComboBox.css"
+import React from "react";
+import { array, string, func, object, number } from "prop-types";
+import Select from "../Elements/Select";
+import Button from "../Elements/Button";
+import "./ComboBox.css";
 
 const ComboBox = ({
     filters,
@@ -26,13 +27,19 @@ const ComboBox = ({
         updateState(key, value);
         populateSecondaryFilter(value);
     };
-    const populateSecondaryFilter = (value) => {
+    const populateSecondaryFilter = value => {
         if (value < 1) {
             updateState(secondaryFiltersKey, []);
             updateState(secondaryFilterKey, 0);
         } else {
-            updateState(secondaryFiltersKey, filters[primaryFilters[value - 1]]);
-            updateState(secondaryFilterKey, filters[primaryFilters[value - 1]][0].id);
+            updateState(
+                secondaryFiltersKey,
+                filters[primaryFilters[value - 1]]
+            );
+            updateState(
+                secondaryFilterKey,
+                filters[primaryFilters[value - 1]][0].id
+            );
         }
     };
 
@@ -44,14 +51,14 @@ const ComboBox = ({
                     value={primaryFilterVal}
                     change={onPrimaryFilterChange}
                     name={primaryFilterKey}
-                    show={true}
+                    defaultOption="Select"
                 />
                 <Select
                     list={secondaryFilters}
                     value={secondaryFilterVal}
                     change={updateState}
                     name={secondaryFilterKey}
-                    show={true}
+                    defaultOption="Select"
                 />
                 <Button click={onApply} label="Apply" />
                 <Button click={onClear} label="Clear" />
@@ -63,15 +70,29 @@ const ComboBox = ({
 ComboBox.defaultProps = {
     filters: [],
     apply: f => f,
-    clearFilter: f => f ,
+    clearFilter: f => f,
     secondaryFilterVal: "",
-    primaryFilterVal: "",
+    primaryFilterVal: "0",
     updateState: f => f,
     secondaryFilterKey: "",
     primaryFilterKey: "",
     primaryFilters: [],
     secondaryFilters: [],
     secondaryFiltersKey: ""
+};
+
+ComboBox.propTypes = {
+    filters: object.isRequired,
+    apply: func.isRequired,
+    clearFilter: func.isRequired,
+    secondaryFilterVal: string.isRequired,
+    primaryFilterVal: string.isRequired,
+    updateState: func.isRequired,
+    secondaryFilterKey: string.isRequired,
+    primaryFilterKey: string.isRequired,
+    primaryFilters: array.isRequired,
+    secondaryFilters: array.isRequired,
+    secondaryFiltersKey: string.isRequired
 };
 
 export default ComboBox;
