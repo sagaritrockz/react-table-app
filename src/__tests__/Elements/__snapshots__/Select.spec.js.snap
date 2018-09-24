@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should render correctly for else condition 1`] = `
+<select
+  className="select select-custom"
+  name="MockName"
+  onChange={[Function]}
+  value="0"
+>
+  <option
+    key="0"
+    value={1}
+  >
+    Region
+  </option>
+  <option
+    key="1"
+    value={2}
+  >
+    IncomeLevels
+  </option>
+  <option
+    key="2"
+    value={3}
+  >
+    LendingTypes
+  </option>
+</select>
+`;
+
+exports[`Select should render correctly for if condition 1`] = `
+<select
+  className="select select-custom"
+  name="MockName"
+  onChange={[Function]}
+  value="0"
+>
+  <option
+    value={0}
+  >
+    Select
+  </option>
+  <option
+    key="0"
+    value={1}
+  >
+    Region
+  </option>
+  <option
+    key="1"
+    value={2}
+  >
+    IncomeLevels
+  </option>
+  <option
+    key="2"
+    value={3}
+  >
+    LendingTypes
+  </option>
+</select>
+`;
+
+exports[`Select should render correctly with empty 1`] = `
+<select
+  className="select select-custom"
+  name="MockName"
+  onChange={[Function]}
+  value="0"
+>
+  <option
+    value={0}
+  >
+    Select
+  </option>
+</select>
+`;

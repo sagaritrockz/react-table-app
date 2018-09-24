@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader should render correctly on hideLoader 1`] = `
+<div
+  className="loader-container hide-loader"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;
+
+exports[`Loader should render correctly on showLoader 1`] = `
+<div
+  className="loader-container show-loader"
+>
+  <div
+    className="loader"
+  />
+</div>
+`;

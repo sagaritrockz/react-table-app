@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render correctly 1`] = `
+<table
+  className="table table-striped"
+>
+  <thead>
+    <tr>
+      <TableHeader
+        headers={
+          Array [
+            "name",
+            "iso2Code",
+            "region",
+            "capitalCity",
+            "lendingType",
+            "incomeLevel",
+          ]
+        }
+      />
+    </tr>
+  </thead>
+  <tbody>
+    <TableRow
+      data={
+        Array [
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "Oranjestad",
+            "id": "ABW",
+            "incomeLevel": Object {
+              "id": "HIC",
+              "iso2code": "XD",
+              "value": "High income",
+            },
+            "iso2Code": "AW",
+            "latitude": "12.5167",
+            "lendingType": Object {
+              "id": "LNX",
+              "iso2code": "XX",
+              "value": "Not classified",
+            },
+            "longitude": "-70.0167",
+            "name": "Aruba",
+            "region": Object {
+              "id": "LCN",
+              "iso2code": "ZJ",
+              "value": "Latin America & Caribbean ",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "SAS",
+              "iso2code": "8S",
+              "value": "South Asia",
+            },
+            "capitalCity": "Kabul",
+            "id": "AFG",
+            "incomeLevel": Object {
+              "id": "LIC",
+              "iso2code": "XM",
+              "value": "Low income",
+            },
+            "iso2Code": "AF",
+            "latitude": "34.5228",
+            "lendingType": Object {
+              "id": "IDX",
+              "iso2code": "XI",
+              "value": "IDA",
+            },
+            "longitude": "69.1761",
+            "name": "Afghanistan",
+            "region": Object {
+              "id": "SAS",
+              "iso2code": "8S",
+              "value": "South Asia",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "",
+            "id": "AFR",
+            "incomeLevel": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+            "iso2Code": "A9",
+            "latitude": "",
+            "lendingType": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "Aggregates",
+            },
+            "longitude": "",
+            "name": "Africa",
+            "region": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "SSA",
+              "iso2code": "ZF",
+              "value": "Sub-Saharan Africa (excluding high income)",
+            },
+            "capitalCity": "Luanda",
+            "id": "AGO",
+            "incomeLevel": Object {
+              "id": "LMC",
+              "iso2code": "XN",
+              "value": "Lower middle income",
+            },
+            "iso2Code": "AO",
+            "latitude": "-8.81155",
+            "lendingType": Object {
+              "id": "IBD",
+              "iso2code": "XF",
+              "value": "IBRD",
+            },
+            "longitude": "13.242",
+            "name": "Angola",
+            "region": Object {
+              "id": "SSF",
+              "iso2code": "ZG",
+              "value": "Sub-Saharan Africa ",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "ECA",
+              "iso2code": "7E",
+              "value": "Europe & Central Asia (excluding high income)",
+            },
+            "capitalCity": "Tirane",
+            "id": "ALB",
+            "incomeLevel": Object {
+              "id": "UMC",
+              "iso2code": "XT",
+              "value": "Upper middle income",
+            },
+            "iso2Code": "AL",
+            "latitude": "41.3317",
+            "lendingType": Object {
+              "id": "IBD",
+              "iso2code": "XF",
+              "value": "IBRD",
+            },
+            "longitude": "19.8172",
+            "name": "Albania",
+            "region": Object {
+              "id": "ECS",
+              "iso2code": "Z7",
+              "value": "Europe & Central Asia",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "Andorra la Vella",
+            "id": "AND",
+            "incomeLevel": Object {
+              "id": "HIC",
+              "iso2code": "XD",
+              "value": "High income",
+            },
+            "iso2Code": "AD",
+            "latitude": "42.5075",
+            "lendingType": Object {
+              "id": "LNX",
+              "iso2code": "XX",
+              "value": "Not classified",
+            },
+            "longitude": "1.5218",
+            "name": "Andorra",
+            "region": Object {
+              "id": "ECS",
+              "iso2code": "Z7",
+              "value": "Europe & Central Asia",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "",
+            "id": "ANR",
+            "incomeLevel": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+            "iso2Code": "L5",
+            "latitude": "",
+            "lendingType": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "Aggregates",
+            },
+            "longitude": "",
+            "name": "Andean Region",
+            "region": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "",
+            "id": "ARB",
+            "incomeLevel": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+            "iso2Code": "1A",
+            "latitude": "",
+            "lendingType": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "Aggregates",
+            },
+            "longitude": "",
+            "name": "Arab World",
+            "region": Object {
+              "id": "NA",
+              "iso2code": "NA",
+              "value": "Aggregates",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "",
+              "iso2code": "",
+              "value": "",
+            },
+            "capitalCity": "Abu Dhabi",
+            "id": "ARE",
+            "incomeLevel": Object {
+              "id": "HIC",
+              "iso2code": "XD",
+              "value": "High income",
+            },
+            "iso2Code": "AE",
+            "latitude": "24.4764",
+            "lendingType": Object {
+              "id": "LNX",
+              "iso2code": "XX",
+              "value": "Not classified",
+            },
+            "longitude": "54.3705",
+            "name": "United Arab Emirates",
+            "region": Object {
+              "id": "MEA",
+              "iso2code": "ZQ",
+              "value": "Middle East & North Africa",
+            },
+          },
+          Object {
+            "adminregion": Object {
+              "id": "LAC",
+              "iso2code": "XJ",
+              "value": "Latin America & Caribbean (excluding high income)",
+            },
+            "capitalCity": "Buenos Aires",
+            "id": "ARG",
+            "incomeLevel": Object {
+              "id": "HIC",
+              "iso2code": "XD",
+              "value": "High income",
+            },
+            "iso2Code": "AR",
+            "latitude": "-34.6118",
+            "lendingType": Object {
+              "id": "IBD",
+              "iso2code": "XF",
+              "value": "IBRD",
+            },
+            "longitude": "-58.4173",
+            "name": "Argentina",
+            "region": Object {
+              "id": "LCN",
+              "iso2code": "ZJ",
+              "value": "Latin America & Caribbean ",
+            },
+          },
+        ]
+      }
+      headers={
+        Array [
+          "name",
+          "iso2Code",
+          "region",
+          "capitalCity",
+          "lendingType",
+          "incomeLevel",
+        ]
+      }
+    />
+  </tbody>
+</table>
+`;

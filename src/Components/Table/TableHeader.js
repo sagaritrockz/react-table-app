@@ -1,11 +1,20 @@
 import React from "react";
+import { array } from 'prop-types'
 
-const TableHeader = ({ header }) => {
-    return (<th>{header}</th>);
+const TableHeader = ({ headers }) => {
+    return (
+        headers.map((item, index) => (
+            <th key={index} >{item}</th>
+        ))
+    )
 };
 
 TableHeader.defaultProps = {
-    header: ''
+    headers: []
+};
+
+TableHeader.propTypes = {
+    headers: array.isRequired
 };
 
 export default TableHeader;

@@ -1,5 +1,5 @@
 {
-  "name": "my-react-project",
+  "name": "react-table-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,5 +12,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16.3": "^1.2.0",
+    "enzyme-to-json": "^3.3.4"
   }
 }

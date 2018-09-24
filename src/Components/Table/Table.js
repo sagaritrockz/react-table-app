@@ -8,15 +8,11 @@ const Table = ({ tableData, tableHeaders }) => {
         <table className="table table-striped">
           <thead>
             <tr>
-                {tableHeaders.map((item, index) => {
-                    return <TableHeader key={index} header={item} />;
-                })}
+                <TableHeader headers={tableHeaders} />
             </tr>
           </thead>
           <tbody>
-                {tableData.map((item, index) => (
-                    <TableRow key={index} data={item} headers={tableHeaders} />
-                ))}
+                <TableRow data={tableData} headers={tableHeaders} />
           </tbody>
         </table>
     );

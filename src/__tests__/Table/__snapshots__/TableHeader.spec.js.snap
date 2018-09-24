@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeader should render correctly 1`] = `
+Array [
+  <th
+    key="0"
+>
+    name
+</th>,
+  <th
+    key="1"
+>
+    iso2Code
+</th>,
+  <th
+    key="2"
+>
+    region
+</th>,
+  <th
+    key="3"
+>
+    capitalCity
+</th>,
+  <th
+    key="4"
+>
+    lendingType
+</th>,
+  <th
+    key="5"
+>
+    incomeLevel
+</th>,
+]
+`;

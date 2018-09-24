@@ -60,8 +60,8 @@ const ComboBox = ({
                     name={secondaryFilterKey}
                     defaultOption="Select"
                 />
-                <Button click={onApply} label="Apply" />
-                <Button click={onClear} label="Clear" />
+                <Button click={onApply} label="Apply" name="apply" />
+                <Button click={onClear} label="Clear" name="clear" />
             </div>
         </div>
     );

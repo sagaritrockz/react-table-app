@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow should render correctly 1`] = `
+Array [
+  <tr
+    key="0"
+>
+    <td
+        key="0"
+    >
+        Aruba
+    </td>
+    <td
+        key="1"
+    >
+        AW
+    </td>
+    <td
+        key="2"
+    >
+        Latin America & Caribbean 
+    </td>
+    <td
+        key="3"
+    >
+        Oranjestad
+    </td>
+    <td
+        key="4"
+    >
+        Not classified
+    </td>
+    <td
+        key="5"
+    >
+        High income
+    </td>
+</tr>,
+  <tr
+    key="1"
+>
+    <td
+        key="0"
+    >
+        Afghanistan
+    </td>
+    <td
+        key="1"
+    >
+        AF
+    </td>
+    <td
+        key="2"
+    >
+        South Asia
+    </td>
+    <td
+        key="3"
+    >
+        Kabul
+    </td>
+    <td
+        key="4"
+    >
+        IDA
+    </td>
+    <td
+        key="5"
+    >
+        Low income
+    </td>
+</tr>,
+  <tr
+    key="2"
+>
+    <td
+        key="0"
+    >
+        Africa
+    </td>
+    <td
+        key="1"
+    >
+        A9
+    </td>
+    <td
+        key="2"
+    >
+        Aggregates
+    </td>
+    <td
+        key="3"
+    />
+    <td
+        key="4"
+    >
+        Aggregates
+    </td>
+    <td
+        key="5"
+    >
+        Aggregates
+    </td>
+</tr>,
+  <tr
+    key="3"
+>
+    <td
+        key="0"
+    >
+        Angola
+    </td>
+    <td
+        key="1"
+    >
+        AO
+    </td>
+    <td
+        key="2"
+    >
+        Sub-Saharan Africa 
+    </td>
+    <td
+        key="3"
+    >
+        Luanda
+    </td>
+    <td
+        key="4"
+    >
+        IBRD
+    </td>
+    <td
+        key="5"
+    >
+        Lower middle income
+    </td>
+</tr>,
+  <tr
+    key="4"
+>
+    <td
+        key="0"
+    >
+        Albania
+    </td>
+    <td
+        key="1"
+    >
+        AL
+    </td>
+    <td
+        key="2"
+    >
+        Europe & Central Asia
+    </td>
+    <td
+        key="3"
+    >
+        Tirane
+    </td>
+    <td
+        key="4"
+    >
+        IBRD
+    </td>
+    <td
+        key="5"
+    >
+        Upper middle income
+    </td>
+</tr>,
+  <tr
+    key="5"
+>
+    <td
+        key="0"
+    >
+        Andorra
+    </td>
+    <td
+        key="1"
+    >
+        AD
+    </td>
+    <td
+        key="2"
+    >
+        Europe & Central Asia
+    </td>
+    <td
+        key="3"
+    >
+        Andorra la Vella
+    </td>
+    <td
+        key="4"
+    >
+        Not classified
+    </td>
+    <td
+        key="5"
+    >
+        High income
+    </td>
+</tr>,
+  <tr
+    key="6"
+>
+    <td
+        key="0"
+    >
+        Andean Region
+    </td>
+    <td
+        key="1"
+    >
+        L5
+    </td>
+    <td
+        key="2"
+    >
+        Aggregates
+    </td>
+    <td
+        key="3"
+    />
+    <td
+        key="4"
+    >
+        Aggregates
+    </td>
+    <td
+        key="5"
+    >
+        Aggregates
+    </td>
+</tr>,
+  <tr
+    key="7"
+>
+    <td
+        key="0"
+    >
+        Arab World
+    </td>
+    <td
+        key="1"
+    >
+        1A
+    </td>
+    <td
+        key="2"
+    >
+        Aggregates
+    </td>
+    <td
+        key="3"
+    />
+    <td
+        key="4"
+    >
+        Aggregates
+    </td>
+    <td
+        key="5"
+    >
+        Aggregates
+    </td>
+</tr>,
+  <tr
+    key="8"
+>
+    <td
+        key="0"
+    >
+        United Arab Emirates
+    </td>
+    <td
+        key="1"
+    >
+        AE
+    </td>
+    <td
+        key="2"
+    >
+        Middle East & North Africa
+    </td>
+    <td
+        key="3"
+    >
+        Abu Dhabi
+    </td>
+    <td
+        key="4"
+    >
+        Not classified
+    </td>
+    <td
+        key="5"
+    >
+        High income
+    </td>
+</tr>,
+  <tr
+    key="9"
+>
+    <td
+        key="0"
+    >
+        Argentina
+    </td>
+    <td
+        key="1"
+    >
+        AR
+    </td>
+    <td
+        key="2"
+    >
+        Latin America & Caribbean 
+    </td>
+    <td
+        key="3"
+    >
+        Buenos Aires
+    </td>
+    <td
+        key="4"
+    >
+        IBRD
+    </td>
+    <td
+        key="5"
+    >
+        High income
+    </td>
+</tr>,
+]
+`;

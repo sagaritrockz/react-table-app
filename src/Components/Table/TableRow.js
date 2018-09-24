@@ -1,24 +1,30 @@
 import React from "react";
+import { array } from 'prop-types'
 
 const TableRow = ({ data, headers }) => {
-  return (
-        <tr>
-            {
-                headers.map((header, index) => {
-                    if (typeof data[header] == 'object') {
-                    return <td key={index}>{data[header].value}</td>
+    return (
+        data.map((item, i) => (
+            <tr key={i}>
+                {headers.map((header, ind) => {
+                    if (typeof item[header] == 'object') {
+                        return <td key={ind}>{item[header].value}</td>
                     } else {
-                        return <td key={index}>{data[header]}</td>                    
+                        return <td key={ind}>{item[header]}</td>
                     }
-                })
-            }
-        </tr>
+                })}
+            </tr>
+        ))
     );    
 };
 
 TableRow.defaultProps = {
-    data: {},
+    data: [],
     headers: []
+};
+
+TableRow.propTypes = {
+    data: array.isRequired,
+    headers: array.isRequired
 };
 
 export default TableRow;

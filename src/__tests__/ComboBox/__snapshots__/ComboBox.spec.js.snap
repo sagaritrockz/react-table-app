@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComboBox should render correctly 1`] = `
+<div
+  className="combo-box-container"
+>
+  <div
+    className="combo-box"
+  >
+    <Select
+      change={[Function]}
+      defaultOption="Select"
+      list={Array []}
+      name="_page"
+      value="0"
+    />
+    <Select
+      change={[Function]}
+      defaultOption="Select"
+      list={Array []}
+      name="_paginationDropdown"
+      value="0"
+    />
+    <Button
+      click={[Function]}
+      label="Apply"
+      name="apply"
+    />
+    <Button
+      click={[Function]}
+      label="Clear"
+      name="clear"
+    />
+  </div>
+</div>
+`;
