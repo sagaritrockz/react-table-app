@@ -1,4 +1,5 @@
 import React from "react"
+import { string, func } from 'prop-types'
 import "./Button.css"
 
 const Button = ({ label, click, name }) => {
@@ -13,6 +14,12 @@ Button.defaultProps = {
     label: "",
     click: f => f,
     name: ""
+};
+
+Button.propTypes = {
+    label: string.isRequired,
+    click: func.isRequired,
+    name: string.isRequired
 };
 
 export default Button;
