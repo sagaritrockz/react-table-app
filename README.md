@@ -1,3 +1,5 @@
+## React Table App
+
 Simple App to Demonstrate the creation of Table Component in React
 
 ## Folder Structure
