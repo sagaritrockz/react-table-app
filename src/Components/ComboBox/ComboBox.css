@@ -1,12 +1,12 @@
 .combo-box {
-  border: 1px solid #dee2e6;
-  padding: 15px;
-  display: inline-block;
-  margin: 0 0 10px 0;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    display: inline-block;
+    margin: 0 0 10px 0;
 }
 .combo-box-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .combo-box-container .select-custom {
     margin: 0 10px;

@@ -1,6 +1,6 @@
-import React from "react";
-import { bool } from "prop-types";
-import "./Loader.css";
+import React from "react"
+import { bool } from "prop-types"
+import "./Loader.css"
 
 const Loader = ({ loading }) => {
     return (

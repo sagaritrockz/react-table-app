@@ -11,3 +11,6 @@
 .pagination {
 	display: inline-block;
 }
+.hide-pagination {
+    display: none;
+}

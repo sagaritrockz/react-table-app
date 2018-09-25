@@ -1,4 +1,5 @@
 import React from "react"
+import { array } from "prop-types"
 import TableHeader from "./TableHeader"
 import TableRow from "./TableRow"
 import "./Table.css"
@@ -21,6 +22,11 @@ const Table = ({ tableData, tableHeaders }) => {
 Table.defaultProps = {
     tableData: [],
     tableHeaders: []
+};
+
+Table.propTypes = {
+    tableData: array.isRequired,
+    tableHeaders: array.isRequired
 }
 
 export default Table;

@@ -1,10 +1,10 @@
-import React from "react";
-import { array } from "prop-types";
+import React from "react"
+import { array } from "prop-types"
 
 const TableRow = ({ data, headers }) => {
 	return data.map((item, i) => (
 		<tr key={i}>
-			{headers.map((header, ind) => {
+			{headers.map((header, ind) => {                            //eslint-disable-next-line
 				if (typeof item[header.key] == "object") {
 					return <td key={ind}>{item[header.key].value}</td>;
 				} else {

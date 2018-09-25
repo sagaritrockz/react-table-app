@@ -1,6 +1,6 @@
-import React from "react";
-import { array, number, string, func } from "prop-types";
-import "./Select.css";
+import React from "react"
+import { array, string, func } from "prop-types"
+import "./Select.css"
 
 const Select = ({ list, change, value, name, defaultOption }) => {
     const onChange = e => {

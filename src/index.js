@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { array, object, string } from "prop-types";
-import ComboBox from "./Components/ComboBox/ComboBox";
-import Table from "./Components/Table/Table";
-import Pagination from "./Components/Pagination/Pagination";
-import Loader from "./Components/Loader/Loader";
-import { FILTERS, HEADERS } from "./Constants/Constants";
-import { api, configOptions } from "./config";
-import "./style.css";
+import React from "react"
+import ReactDOM from "react-dom"
+import { array, object, string } from "prop-types"
+import ComboBox from "./Components/ComboBox/ComboBox"
+import Table from "./Components/Table/Table"
+import Pagination from "./Components/Pagination/Pagination"
+import Loader from "./Components/Loader/Loader"
+import { FILTERS, HEADERS } from "./Constants/Constants"
+import { api, configOptions } from "./config"
+import "./style.css"
 
 class App extends React.Component {
 	constructor(props) {
@@ -52,32 +52,7 @@ class App extends React.Component {
 		this.makeRequest(this.props.apiUrl, this.buildQuery(this.queryParams))
 			.then(response => response.json())
 			.then(data => {
-				if (data[0]) {
-					this.updateState([this.stateKeys._page], data[0].page);
-					this.updateState([this.stateKeys._pages], data[0].pages);
-					this.updateState(
-						[this.stateKeys._perPage],
-						data[0].per_page
-					);
-					this.updateState([this.stateKeys._total], data[0].total);
-				}
-				if (data[1]) {
-					this.updateState([this.stateKeys._tableData], data[1]);
-				}
-				this.updateState([this.stateKeys._loading], false);
-			});
-	};
-
-	makeRequest = (api, query) => {
-		return fetch(`${api}?${query}`);
-	};
-
-	getData = (api, query) => {
-		this.updateState([this.stateKeys._loading], true);
-		this.makeRequest(api, this.buildQuery(query))
-			.then(response => response.json())
-			.then(data => {
-				if (data[0]) {
+                if (data[0]) {
 					this.updateState([this.stateKeys._page], data[0].page);
 					this.updateState([this.stateKeys._pages], data[0].pages);
 					this.updateState(
@@ -89,15 +64,48 @@ class App extends React.Component {
 				if (data[1]) {
 					this.updateState([this.stateKeys._tableData], data[1]);
 				} else {
-					this.updateState([this.stateKeys._tableData], []);
+					this.updateState([this.stateKeys._tableData], [{name: 'No Records Found'}]);
 				}
 				this.updateState([this.stateKeys._loading], false);
-			});
+			})
+            .catch(error => {
+                console.log(error);
+            });
+	};
+
+	makeRequest = (api, query) => {
+		return fetch(`${api}?${query}`);
+	};
+
+	getData = (api, query) => {
+		this.updateState([this.stateKeys._loading], true);
+		this.makeRequest(api, this.buildQuery(query))
+			.then(response => response.json())
+			.then(data => {
+                if (data[0]) {
+					this.updateState([this.stateKeys._page], data[0].page);
+					this.updateState([this.stateKeys._pages], data[0].pages);
+					this.updateState(
+						[this.stateKeys._perPage],
+						data[0].per_page
+					);
+					this.updateState([this.stateKeys._total], data[0].total);
+				}
+				if (data[1]) {
+					this.updateState([this.stateKeys._tableData], data[1]);
+				} else {
+					this.updateState([this.stateKeys._tableData], [{name: 'No Records Found'}]);
+				}
+				this.updateState([this.stateKeys._loading], false);
+			})
+            .catch(error => {
+                console.log(error);
+            });
 	};
 
 	buildQuery = query => {
 		return Object.keys(query)
-			.filter(key => {
+			.filter(key => {                                    //eslint-disable-next-line
 				if (query[key] == "") {
 					return false;
 				}
@@ -115,7 +123,7 @@ class App extends React.Component {
 
 	onApply = () => {
 		let { _searchValue, _searchOn } = this.state;
-
+        //eslint-disable-next-line
 		if (_searchValue == "0") {
 			return;
 		}
@@ -134,9 +142,6 @@ class App extends React.Component {
 
 	clearFilter = () => {
 		let { _searchValue } = this.state;
-		if (_searchValue == "0") {
-			return;
-		}
 		this.updateState([this.stateKeys._secondaryFilters], []);
 		this.updateState([this.stateKeys._searchValue], 0);
 		this.updateState([this.stateKeys._searchOn], 0);

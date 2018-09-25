@@ -28,7 +28,7 @@ const FILTERS = {
 
 const HEADERS = [
 	{ key: "name", label: "Name" },
-	{ key: "iso2Code", label: "Iso2Code" },
+	{ key: "iso2Code", label: "Iso2 Code" },
 	{ key: "region", label: "Region" },
 	{ key: "capitalCity", label: "Capital City" },
 	{ key: "lendingType", label: "Lending Type" },

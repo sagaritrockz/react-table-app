@@ -1,12 +1,12 @@
-import React from 'react';
-import Enzyme from 'enzyme';
-import Adaptar from 'enzyme-adapter-react-16.3';
-import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
-import Table from '../../Components/Table/Table';
-import TableRow from '../../Components/Table/TableRow';
-import TableHeader from '../../Components/Table/TableHeader';
-import { HEADERS } from '../../Constants/Constants';
+import React from 'react'
+import Enzyme from 'enzyme'
+import Adaptar from 'enzyme-adapter-react-16.3'
+import { shallow } from 'enzyme'
+import { shallowToJson } from 'enzyme-to-json'
+import Table from '../../Components/Table/Table'
+import TableRow from '../../Components/Table/TableRow'
+import TableHeader from '../../Components/Table/TableHeader'
+import { HEADERS } from '../../Constants/Constants'
 
 Enzyme.configure({adapter: new Adaptar()});
 

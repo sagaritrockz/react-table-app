@@ -5,32 +5,32 @@ Array [
   <th
     key="0"
 >
-    name
+    Name
 </th>,
   <th
     key="1"
 >
-    iso2Code
+    Iso2 Code
 </th>,
   <th
     key="2"
 >
-    region
+    Region
 </th>,
   <th
     key="3"
 >
-    capitalCity
+    Capital City
 </th>,
   <th
     key="4"
 >
-    lendingType
+    Lending Type
 </th>,
   <th
     key="5"
 >
-    incomeLevel
+    Income Level
 </th>,
 ]
 `;

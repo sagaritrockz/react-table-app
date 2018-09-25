@@ -1,10 +1,10 @@
-import React from 'react';
-import Enzyme from 'enzyme';
-import Adaptar from 'enzyme-adapter-react-16.3';
-import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
-import TableRow from '../../Components/Table/TableRow';
-import { HEADERS } from '../../Constants/Constants';
+import React from 'react'
+import Enzyme from 'enzyme'
+import Adaptar from 'enzyme-adapter-react-16.3'
+import { shallow } from 'enzyme'
+import { shallowToJson } from 'enzyme-to-json'
+import TableRow from '../../Components/Table/TableRow'
+import { HEADERS } from '../../Constants/Constants'
 
 Enzyme.configure({adapter: new Adaptar()});
 
@@ -13,7 +13,7 @@ describe('TableRow', () => {
         const data = [{"id":"ABW","iso2Code":"AW","name":"Aruba","region":{"id":"LCN","iso2code":"ZJ","value":"Latin America & Caribbean "},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"HIC","iso2code":"XD","value":"High income"},"lendingType":{"id":"LNX","iso2code":"XX","value":"Not classified"},"capitalCity":"Oranjestad","longitude":"-70.0167","latitude":"12.5167"},{"id":"AFG","iso2Code":"AF","name":"Afghanistan","region":{"id":"SAS","iso2code":"8S","value":"South Asia"},"adminregion":{"id":"SAS","iso2code":"8S","value":"South Asia"},"incomeLevel":{"id":"LIC","iso2code":"XM","value":"Low income"},"lendingType":{"id":"IDX","iso2code":"XI","value":"IDA"},"capitalCity":"Kabul","longitude":"69.1761","latitude":"34.5228"},{"id":"AFR","iso2Code":"A9","name":"Africa","region":{"id":"NA","iso2code":"NA","value":"Aggregates"},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"NA","iso2code":"NA","value":"Aggregates"},"lendingType":{"id":"","iso2code":"","value":"Aggregates"},"capitalCity":"","longitude":"","latitude":""},{"id":"AGO","iso2Code":"AO","name":"Angola","region":{"id":"SSF","iso2code":"ZG","value":"Sub-Saharan Africa "},"adminregion":{"id":"SSA","iso2code":"ZF","value":"Sub-Saharan Africa (excluding high income)"},"incomeLevel":{"id":"LMC","iso2code":"XN","value":"Lower middle income"},"lendingType":{"id":"IBD","iso2code":"XF","value":"IBRD"},"capitalCity":"Luanda","longitude":"13.242","latitude":"-8.81155"},{"id":"ALB","iso2Code":"AL","name":"Albania","region":{"id":"ECS","iso2code":"Z7","value":"Europe & Central Asia"},"adminregion":{"id":"ECA","iso2code":"7E","value":"Europe & Central Asia (excluding high income)"},"incomeLevel":{"id":"UMC","iso2code":"XT","value":"Upper middle income"},"lendingType":{"id":"IBD","iso2code":"XF","value":"IBRD"},"capitalCity":"Tirane","longitude":"19.8172","latitude":"41.3317"},{"id":"AND","iso2Code":"AD","name":"Andorra","region":{"id":"ECS","iso2code":"Z7","value":"Europe & Central Asia"},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"HIC","iso2code":"XD","value":"High income"},"lendingType":{"id":"LNX","iso2code":"XX","value":"Not classified"},"capitalCity":"Andorra la Vella","longitude":"1.5218","latitude":"42.5075"},{"id":"ANR","iso2Code":"L5","name":"Andean Region","region":{"id":"NA","iso2code":"NA","value":"Aggregates"},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"NA","iso2code":"NA","value":"Aggregates"},"lendingType":{"id":"","iso2code":"","value":"Aggregates"},"capitalCity":"","longitude":"","latitude":""},{"id":"ARB","iso2Code":"1A","name":"Arab World","region":{"id":"NA","iso2code":"NA","value":"Aggregates"},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"NA","iso2code":"NA","value":"Aggregates"},"lendingType":{"id":"","iso2code":"","value":"Aggregates"},"capitalCity":"","longitude":"","latitude":""},{"id":"ARE","iso2Code":"AE","name":"United Arab Emirates","region":{"id":"MEA","iso2code":"ZQ","value":"Middle East & North Africa"},"adminregion":{"id":"","iso2code":"","value":""},"incomeLevel":{"id":"HIC","iso2code":"XD","value":"High income"},"lendingType":{"id":"LNX","iso2code":"XX","value":"Not classified"},"capitalCity":"Abu Dhabi","longitude":"54.3705","latitude":"24.4764"},{"id":"ARG","iso2Code":"AR","name":"Argentina","region":{"id":"LCN","iso2code":"ZJ","value":"Latin America & Caribbean "},"adminregion":{"id":"LAC","iso2code":"XJ","value":"Latin America & Caribbean (excluding high income)"},"incomeLevel":{"id":"HIC","iso2code":"XD","value":"High income"},"lendingType":{"id":"IBD","iso2code":"XF","value":"IBRD"},"capitalCity":"Buenos Aires","longitude":"-58.4173","latitude":"-34.6118"}];
         
         const output = shallow(
-          <TableRow key={0} data={data} headers={HEADERS} />
+            <TableRow key={0} data={data} headers={HEADERS} />
         );
         expect(shallowToJson(output)).toMatchSnapshot();
     });

@@ -1,8 +1,8 @@
-import React from "react";
-import { number, string, func } from "prop-types";
-import Select from "../Elements/Select";
-import Button from "../Elements/Button";
-import "./Pagination.css";
+import React from "react"
+import { number, string, func } from "prop-types"
+import Select from "../Elements/Select"
+import Button from "../Elements/Button"
+import "./Pagination.css"
 
 const Pagination = ({
 	total,
@@ -35,8 +35,10 @@ const Pagination = ({
 	};
 
 	return (
-		<div className="pagination-container">
-			<div class="pagination-text">
+		<div className={
+                "pagination-container " + (to ? "" : "hide-pagination")
+            }>
+			<div className="pagination-text">
 				Showing {from} to {to < total ? to : total} of {total} records
 			</div>
 			<div className="pagination">

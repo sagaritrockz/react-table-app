@@ -1,8 +1,8 @@
-import React from "react";
-import { array, string, func, object, number } from "prop-types";
-import Select from "../Elements/Select";
-import Button from "../Elements/Button";
-import "./ComboBox.css";
+import React from "react"
+import { array, string, func, object } from "prop-types"
+import Select from "../Elements/Select"
+import Button from "../Elements/Button"
+import "./ComboBox.css"
 
 const ComboBox = ({
     filters,

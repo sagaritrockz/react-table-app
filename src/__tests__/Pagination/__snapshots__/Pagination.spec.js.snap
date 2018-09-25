@@ -2,8 +2,19 @@
 
 exports[`Pagination should render correctly 1`] = `
 <div
-  className="pagination-container"
+  className="pagination-container "
 >
+  <div
+    className="pagination-text"
+  >
+    Showing 
+    1
+     to 
+    10
+     of 
+    304
+     records
+  </div>
   <div
     className="pagination"
   >

@@ -9,12 +9,30 @@ exports[`Table should render correctly 1`] = `
       <TableHeader
         headers={
           Array [
-            "name",
-            "iso2Code",
-            "region",
-            "capitalCity",
-            "lendingType",
-            "incomeLevel",
+            Object {
+              "key": "name",
+              "label": "Name",
+            },
+            Object {
+              "key": "iso2Code",
+              "label": "Iso2 Code",
+            },
+            Object {
+              "key": "region",
+              "label": "Region",
+            },
+            Object {
+              "key": "capitalCity",
+              "label": "Capital City",
+            },
+            Object {
+              "key": "lendingType",
+              "label": "Lending Type",
+            },
+            Object {
+              "key": "incomeLevel",
+              "label": "Income Level",
+            },
           ]
         }
       />
@@ -308,12 +326,30 @@ exports[`Table should render correctly 1`] = `
       }
       headers={
         Array [
-          "name",
-          "iso2Code",
-          "region",
-          "capitalCity",
-          "lendingType",
-          "incomeLevel",
+          Object {
+            "key": "name",
+            "label": "Name",
+          },
+          Object {
+            "key": "iso2Code",
+            "label": "Iso2 Code",
+          },
+          Object {
+            "key": "region",
+            "label": "Region",
+          },
+          Object {
+            "key": "capitalCity",
+            "label": "Capital City",
+          },
+          Object {
+            "key": "lendingType",
+            "label": "Lending Type",
+          },
+          Object {
+            "key": "incomeLevel",
+            "label": "Income Level",
+          },
         ]
       }
     />

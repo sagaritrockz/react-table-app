@@ -1,9 +1,9 @@
-import React from 'react';
-import Enzyme from 'enzyme';
-import Adaptar from 'enzyme-adapter-react-16.3';
-import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
-import Button from '../../Components/Elements/Button';
+import React from 'react'
+import Enzyme from 'enzyme'
+import Adaptar from 'enzyme-adapter-react-16.3'
+import { shallow } from 'enzyme'
+import { shallowToJson } from 'enzyme-to-json'
+import Button from '../../Components/Elements/Button'
 
 Enzyme.configure({adapter: new Adaptar()});
 
