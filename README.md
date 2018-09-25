@@ -35,6 +35,18 @@ my-app/
         Select.css
         Button.js
         Button.css
+    __test__/
+      Table/
+        Table.spec.js
+        TableRow.spec.js
+        TableHeader.spec.js
+      Pagination/
+        Pagination.spec.js
+      ComboBox/
+        ComboBox.spec.js
+      Elements/
+        Select.js
+        Button.spec.js
 ```
 
 For the project to build, **these files must exist with exact filenames**:
@@ -46,18 +58,17 @@ For the project to build, **these files must exist with exact filenames**:
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits i.e. Hot reload.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
